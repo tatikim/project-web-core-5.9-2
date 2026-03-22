@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('barlow/Barlow-Regular.otf') format('opentype');
+}
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+body {
+    background-color: #EFF6FF;
+     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .container {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    max-width: 1500px;
+    margin: 0 auto;
+    color: #2A4A5C;
+    background-color: #FFFFFF;
+ }
+
+.left {
+    flex: 1.2;
+    display: flex;
+    position: relative;
+}
+.image {
+    flex: 1;
+}
+.image img  {
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.logo img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    max-width: 150px;
+    background: none;
+}
+.right {
+    background-color: #FFFFFF;
+    flex: 1;
+    padding: 30px;
+    margin: 0;
+    
+}
+h1 {
+    margin: 100px 0px 30px;
+    font-size: 45px;
+    color: #7B8A92;
+}
+p {
+    margin-bottom: 30px;
+    font-size: 25px; 
+    color: #96A5B1;
+}
+.sm {
+display: flex;
+gap: 50px;
+margin: 80px 0 70px;
+}
+.btn {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    text-decoration: none;
+}
+.btn img {
+    width: 16px;
+}
+img.icon-f {
+    background: #0076B6;
+}
+img.icon-l {
+    background: #255A9B;
+}
+.btn.fb {
+    background: #0076B6;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.btn.in {
+    background: #255A9B;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.OR {
+    margin: 60px;
+    align-items: center;  
+    justify-content: center;
+    display: flex;  
+}
+.OR hr {
+    flex: 1;
+    max-width: 200px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+.OR span {
+    margin: 0 10px;
+    font-size: 20px;
+}
+.fields {
+    margin: 60px 0 0;
+    display: flex;
+    gap: 30px;
+}
+.field {
+    position: relative;
+    width: 100%;
+}
+
+.field input {
+    width: 100%;
+    padding: 26px 12px 10px;
+    border: 1px solid #EEEEEE;
+    font-size: 25px;
+}
+
+.field label {
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    color: #AFAFAF;
+    font-size: 25px;
+    pointer-events: none;
+    transition: 0.2s;
+    margin-bottom: 4px;
+}
+
+h2 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #7B8A92;
+}
+
+.options {
+    display: flex;
+    gap: 20px;
+    margin: 50px 0px 100px;
+}
+.tooltip {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    width: 250px;
+    background: #f5f7fa;
+    padding: 10px;
+    font-size: 20px;
+    color: #666;
+    border-radius: 6px;
+}
+.info:hover .tooltip {
+    display: block;
+}
+.option {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    
+}
+.info {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #e0e6ed;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+button {
+    margin: 50px 0;
+    border: none;
+    padding: 20px 100px;
+    background-color: #3698FB;
+    font-size: 20px;
+    border-radius: 6px;
+    color: #FFFFFF;
+}
