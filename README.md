@@ -1,2 +1,2 @@
 ## Project link
-https://tatikim.github.io/project-web-core-5.9-2/
+https://github.com/tatikim/project-web-core-5.9-2.git
